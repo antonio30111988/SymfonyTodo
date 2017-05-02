@@ -31,7 +31,8 @@
         "twig/twig": "^1.0||^2.0",
         "league/flysystem": "^1.0",
         "guzzlehttp/guzzle": "^6.2",
-        "league/csv": "^8.2"
+        "league/csv": "^8.2",
+        "phpunit/phpunit": "^5.7"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

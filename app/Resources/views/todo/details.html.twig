@@ -1,5 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-TOD DETAILS
+	<a class="btn btn-default" href="/" >Back To Todos</a>
+	<hr>
+	<h2 class="page-header">{{details.name}}</h2>
+	<ul class="list-group">
+		<li class="list-group-item">Category: {{details.category}}</li>
+		<li class="list-group-item">Description: {{details.priority}}</li>
+		<li class="list-group-item">Due date: <strong> {{details.dueDate|date('F j, Y, g:i a') }}</strong></li>
+	</ul>
+	<p>{{details.description}}</p>
 {% endblock %}

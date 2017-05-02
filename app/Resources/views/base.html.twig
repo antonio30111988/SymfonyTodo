@@ -43,7 +43,12 @@
     <div class="container">
         <div class="row">
             <div class="md-12">
+                {% for flash_message in app.session.flashbag.get('notice') %}
+                    {{ flash_message }}
+                {% endfor %}
+
                   {% block body %}{% endblock %}      
+               
             </div>
         </div>
     </div><!-- /.container -->
